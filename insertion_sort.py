@@ -1,3 +1,7 @@
+# ===============INSERTION
+# ===============SORT
+# ==============ALGORITHM
+
 import random as m
 
 default_array=list()

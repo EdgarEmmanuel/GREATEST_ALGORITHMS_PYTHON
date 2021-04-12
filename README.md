@@ -13,3 +13,5 @@ ___
 ![quickSort](https://www.techiedelight.com/wp-content/uploads/Quicksort.png)
 ___
 >[5) COUNT SORT ALGORITHM ](https://github.com/EdgarEmmanuel/GREATEST_ALGORITHMS_PYTHON/blob/main/count_sort.py)
+___
+>[6) BINARY SEARCH ALGORITHM ](https://github.com/EdgarEmmanuel/GREATEST_ALGORITHMS_PYTHON/blob/main/binary_search.py)

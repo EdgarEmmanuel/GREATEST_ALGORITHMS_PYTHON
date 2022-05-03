@@ -21,9 +21,8 @@ generate_qr_code(final, userName)
 
 
 def decode_qr_image(imagePath):
-    #qr = qrtools.QR()
     data = decode(Image.open(imagePath))
-    print(f"the content of the QR image id : {data.data}")
+    print(f"the content of the QR image id : {data}")
 
 
 final = userName.replace(" ","_")

@@ -122,6 +122,7 @@ def play(game, x_player, o_player, print_game=True):
 
         if print_game:
             print("It's a tie")
+            print('')
 
 
 if __name__ == "__main__":

@@ -115,6 +115,7 @@ def play(game, x_player, o_player, print_game=True):
             if game.current_winner:
                 if print_game:
                     print(letter + ' wins!')
+                    break
 
             # alternate the user
             letter = O_PLAYER if letter == X_PLAYER else X_PLAYER

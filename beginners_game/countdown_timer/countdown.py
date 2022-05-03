@@ -1,9 +1,6 @@
 import time
 
-
 timeInSecond = float(input("Type the time in seconds : "))
-
-date = time.gmtime(timeInSecond)
 
 totalTime = timeInSecond
 

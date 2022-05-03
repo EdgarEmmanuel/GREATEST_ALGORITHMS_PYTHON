@@ -14,7 +14,7 @@ class Game:
     @staticmethod
     def print_board_nums():
         rows_number = [[str(i) for i in range(j * 3, (j + 1) * 3)] for j in range(3)]
-        # equivalent
+        # ===== the equivalent with for loop =======
         # rows = []
         # for j in range(3):
         #     inter = []
@@ -27,8 +27,78 @@ class Game:
 
     def available_move(self):
         moves = [i for (i, spot) in enumerate(self.board) if spot == ' ']
+        # ===== the quivalent with for loop
+        # moves = []
+        # for (i,spot) in enumerate(self.broad):
+        #     if spot == ' ':
+        #         moves.append(i)
         return moves
 
 
-game = Game()
-game.available_move()
+    def empty_games(self):
+        space = ' '
+        return space in self.board
+
+
+    def num_empty_squares(self):
+        space = ''
+        return self.board.count(space)
+
+    def make_move(self, square, letter):
+        if square in self.board:
+            if square in self.available_move():
+                self.board[square] = letter
+                if self.winner(square, letter):
+                    self.current_winner = letter
+                return True
+            return False
+
+    def winner(self, square, letter):
+        rows = [self.board[i * 3:(i + 1) * 3] for i in range(3)]
+        for row in rows:
+            if square in row:
+                length = len(row)
+                num = 0
+                for (i,spot) in enumerate(row):
+                    if spot == letter:
+                        num +=1
+                if num == length:
+                    return True
+                else:
+                    return False
+
+
+
+
+def play(game, x_player, o_player, print_game= True):
+    if print_game:
+        game.print_board_nums()
+
+    letter = 'X'
+    X_PLAYER = 'X'
+    O_PLAYER = 'O'
+
+    while game.empty_games():
+        square = None
+        if letter == X_PLAYER:
+            square = x_player.get_move(game)
+        if letter == O_PLAYER:
+            square = o_player.get_move(game)
+
+        #make the user move
+        if game.make_move(square, letter):
+            if print_game:
+                print(f"{letter} Has done a move to {square}")
+                game.print_board()
+                print('')
+
+            # check if a user has won the game
+            if game.current_winner:
+                if print_game:
+                    print(letter + ' wins!')
+
+            # alternate the user
+            letter = O_PLAYER if letter == X_PLAYER else X_PLAYER
+
+        if print_game:
+            print("It's a tie")

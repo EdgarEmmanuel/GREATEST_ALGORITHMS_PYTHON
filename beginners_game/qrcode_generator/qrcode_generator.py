@@ -1,5 +1,7 @@
 import qrcode
-import qrtools
+from qrtools import qrtools
+from PIL import Image
+from pyzbar.pyzbar import decode
 
 
 # =============== encode data ==============
@@ -11,16 +13,18 @@ def generate_qr_code(username):
 
 
 userName = input("Type your name: ")
-generate_qr_code(userName)
+final = userName.replace("","_")
+generate_qr_code(final)
 
 
 # =========== decode data ===============
 
 
 def decode_qr_image(imagePath):
-    qr = qrtools.QR()
-    qr.decode(imagePath)
-    print(f"the content of the QR image id : {qr.data}")
+    #qr = qrtools.QR()
+    data = decode(Image.open(imagePath))
+    print(f"the content of the QR image id : {data}")
 
 
-decode_qr_image(f"{userName}.png")
+final = userName.replace("","_")
+decode_qr_image(f"{final}.png")

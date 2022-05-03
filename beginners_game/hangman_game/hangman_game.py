@@ -60,7 +60,7 @@ def getUserInput():
 
 
 word = getRandomWord()
-print(f"the word is {word} and his lentgh is {len(word)}")
+#print(f"the word is {word} and his lentgh is {len(word)}")
 
 display = generateBlindedUnderscore(word)
 print(display)

@@ -1,3 +1,6 @@
+from Player import HumanPlayer, ComputerPlayer
+
+
 class Game:
     def __init__(self):
         self.board = [' ' for _ in range(9)]
@@ -34,43 +37,59 @@ class Game:
         #         moves.append(i)
         return moves
 
-
     def empty_games(self):
         space = ' '
         return space in self.board
-
 
     def num_empty_squares(self):
         space = ''
         return self.board.count(space)
 
     def make_move(self, square, letter):
-        if square in self.board:
-            if square in self.available_move():
-                self.board[square] = letter
-                if self.winner(square, letter):
-                    self.current_winner = letter
-                return True
-            return False
+        if self.board[square] == ' ':
+            self.board[square] = letter
+            if self.winner(square, letter):
+                self.current_winner = letter
+            return True
+        return False
 
-    def winner(self, square, letter):
+    def checkWinnerByRow(self, square, letter):
         rows = [self.board[i * 3:(i + 1) * 3] for i in range(3)]
         for row in rows:
             if square in row:
                 length = len(row)
                 num = 0
-                for (i,spot) in enumerate(row):
+                for (i, spot) in enumerate(row):
                     if spot == letter:
-                        num +=1
+                        num += 1
                 if num == length:
                     return True
                 else:
                     return False
 
+    def winner(self, square, letter):
+        # check row
+        self.checkWinnerByRow(square, letter)
+
+        # check column
+        col_ind = square % 3
+        column = [self.board[col_ind + i * 3] for i in range(3)]
+        if all([spot == letter for spot in column]):
+            return True
+
+        # check diagonals
+        if square % 2 == 0:
+            diagonal1 = [self.board[i] for i in [0, 4, 8]]
+            if all([spot == letter for spot in diagonal1]):
+                return True
+            diagonal2 = [self.board[i] for i in [2, 4, 6]]
+            if all([spot == letter for spot in diagonal2]):
+                return True
+
+        return False
 
 
-
-def play(game, x_player, o_player, print_game= True):
+def play(game, x_player, o_player, print_game=True):
     if print_game:
         game.print_board_nums()
 
@@ -85,7 +104,7 @@ def play(game, x_player, o_player, print_game= True):
         if letter == O_PLAYER:
             square = o_player.get_move(game)
 
-        #make the user move
+        # make the user move
         if game.make_move(square, letter):
             if print_game:
                 print(f"{letter} Has done a move to {square}")
@@ -102,3 +121,10 @@ def play(game, x_player, o_player, print_game= True):
 
         if print_game:
             print("It's a tie")
+
+
+if __name__ == "__main__":
+    x_player = HumanPlayer('X')
+    o_player = ComputerPlayer('O')
+    tictactoe = Game()
+    play(tictactoe, x_player, o_player, print_game=True)

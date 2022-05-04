@@ -1,4 +1,5 @@
 from Player import HumanPlayer, ComputerPlayer
+import time
 
 
 class Game:
@@ -134,10 +135,11 @@ def play(game, x_player, o_player, print_game=True):
 
             # alternate the user
             letter = O_PLAYER if letter == X_PLAYER else X_PLAYER
+        time.sleep(2)
 
-        if print_game:
-            print("It's a tie")
-            print('')
+    if print_game:
+        print("It's a tie")
+        print('')
 
 
 if __name__ == "__main__":

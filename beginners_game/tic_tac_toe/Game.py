@@ -90,13 +90,16 @@ class Game:
 
     def winner(self, square, letter):
         # check row
-        self.checkWinnerByRow(square, letter)
+        if self.checkWinnerByRow(square, letter):
+            return True
 
         # check column
-        self.checkWinnerByColumn(square, letter)
+        if self.checkWinnerByColumn(square, letter):
+            return True
 
         # check diagonals
-        self.checkWinnerByDiagonals(square, letter)
+        if self.checkWinnerByDiagonals(square, letter):
+            return True
 
         return False
 

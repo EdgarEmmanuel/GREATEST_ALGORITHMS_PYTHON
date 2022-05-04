@@ -29,7 +29,8 @@ class Game:
             print(" | " + " | ".join(row) + " | ")
 
     def available_move(self):
-        moves = [i for (i, spot) in enumerate(self.board) if spot == ' ']
+        space = ' '
+        moves = [i for (i, spot) in enumerate(self.board) if spot == space]
         # ===== the quivalent with for loop
         # moves = []
         # for (i,spot) in enumerate(self.broad):
@@ -54,30 +55,31 @@ class Game:
         return False
 
     def checkWinnerByRow(self, square, letter):
-        rows = [self.board[i * 3:(i + 1) * 3] for i in range(3)]
-        for row in rows:
-            if square in row:
-                length = len(row)
-                num = 0
-                for (i, spot) in enumerate(row):
-                    if spot == letter:
-                        num += 1
-                if num == length:
-                    return True
-                else:
-                    return False
+        """
+        if the square is equal to 1 => the row will be [ 0 - 1 - 2]
+        :param square:
+        :param letter:
+        :return:
+        """
+        i = square // 3
+        rows = self.board[i * 3:(i + 1) * 3]
+        if all([spot == letter for spot in rows]):
+            return True
 
-    def winner(self, square, letter):
-        # check row
-        self.checkWinnerByRow(square, letter)
-
-        # check column
+    def checkWinnerByColumn(self, square, letter):
+        """
+        for example if the square is equal to 1 => the column will be [1 - 4 - 7]
+        and so on
+        :param square:
+        :param letter:
+        :return:
+        """
         col_ind = square % 3
         column = [self.board[col_ind + i * 3] for i in range(3)]
         if all([spot == letter for spot in column]):
             return True
 
-        # check diagonals
+    def checkWinnerByDiagonals(self, square, letter):
         if square % 2 == 0:
             diagonal1 = [self.board[i] for i in [0, 4, 8]]
             if all([spot == letter for spot in diagonal1]):
@@ -85,6 +87,16 @@ class Game:
             diagonal2 = [self.board[i] for i in [2, 4, 6]]
             if all([spot == letter for spot in diagonal2]):
                 return True
+
+    def winner(self, square, letter):
+        # check row
+        self.checkWinnerByRow(square, letter)
+
+        # check column
+        self.checkWinnerByColumn(square, letter)
+
+        # check diagonals
+        self.checkWinnerByDiagonals(square, letter)
 
         return False
 
@@ -107,7 +119,7 @@ def play(game, x_player, o_player, print_game=True):
         # make the user move
         if game.make_move(square, letter):
             if print_game:
-                print(f"{letter} Has done a move to {square}")
+                print(f"{letter} Player Has done a move to the {square} square ")
                 game.print_board()
                 print('')
 

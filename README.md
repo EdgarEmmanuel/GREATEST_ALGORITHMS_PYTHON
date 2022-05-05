@@ -19,3 +19,4 @@ ___
     - strings slicing
     - The "in" logical operator
     - Strubgs built-in functions
+![strings](pics/strings.png)

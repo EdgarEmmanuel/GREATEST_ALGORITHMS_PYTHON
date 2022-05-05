@@ -1,6 +1,6 @@
 # PYTHON SOFTWARE ENGINEER
 ___
-1. Variables,
+1. Variables
 2. Expressions
 3. Statements
 4. Conditional Structures
@@ -12,3 +12,6 @@ ___
     -  Continue an iteration
     -  Break outside of a loop
     -  Definite Loop
+![loops](pics/loops.png)
+
+9. Strings

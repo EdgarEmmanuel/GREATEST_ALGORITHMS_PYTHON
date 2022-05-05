@@ -15,3 +15,7 @@ ___
 ![loops](pics/loops.png)
 
 9. Strings
+    - accessing character
+    - strings slicing
+    - The "in" logical operator
+    - Strubgs built-in functions

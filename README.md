@@ -23,3 +23,8 @@ ___
 
 10. Files
 ![files](pics/files.png)
+
+___
+### Collections
+
+1. Lists

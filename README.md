@@ -18,5 +18,8 @@ ___
     - accessing character
     - strings slicing
     - The "in" logical operator
-    - Strubgs built-in functions
+    - Strings built-in functions
 ![strings](pics/strings.png)
+
+10. Files
+![files](pics/files.png)

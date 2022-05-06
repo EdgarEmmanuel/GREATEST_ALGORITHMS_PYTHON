@@ -44,8 +44,8 @@ def countSort(array):
         temporaryArray[array[i]]+=1
 
     #now we sort according to the temporary array
-    start=0;
-    end=0;
+    start=0
+    end=0
     for j in range(max+1):
         #we put a value of zero at all the index
 

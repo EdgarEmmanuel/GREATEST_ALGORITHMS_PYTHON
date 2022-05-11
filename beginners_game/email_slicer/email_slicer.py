@@ -3,12 +3,15 @@
 class User:
     def __init__(self, email):
         self.email = email
+        self.delimiterSymbol = None
 
     def determineEmailDomain(self):
-        pass
+        self.delimiterSymbol = self.email.index("@")
+        return self.email[self.delimiterSymbol+1:]
 
     def determineEmailUserName(self):
-        pass
+        self.delimiterSymbol = self.email.index("@")
+        return self.email[:self.delimiterSymbol]
 
     def printUserEmailInfo(self):
         username = self.determineEmailUserName()
@@ -17,4 +20,4 @@ class User:
 
 
 if __name__ == "__main__":
-    User("risbah@gmail.com").printUserEmailInfo()
+    User("risbah.singh@gmail.com").printUserEmailInfo()

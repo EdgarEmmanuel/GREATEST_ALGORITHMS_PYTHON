@@ -27,4 +27,5 @@ def clock():
     root.after(1000, clock)
 
 clock()
+
 root.mainloop()

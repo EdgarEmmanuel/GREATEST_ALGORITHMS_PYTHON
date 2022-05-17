@@ -55,7 +55,7 @@
       <recent name="$PROJECT_DIR$/generators_expr" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.empty_object">
+  <component name="RunManager" selected="Python.tuples_and_named_tuples">
     <configuration name="coroutines" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="my_courses" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,7 +140,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sets_comprehensions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="tuples_and_named_tuples" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="my_courses" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,11 +148,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/comprehensions" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_structures" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/comprehensions/sets_comprehensions.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_structures/tuples_and_named_tuples.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tuples_and_named_tuples" />
         <item itemvalue="Python.empty_object" />
         <item itemvalue="Python.coroutines" />
         <item itemvalue="Python.generator" />
         <item itemvalue="Python.iterator" />
-        <item itemvalue="Python.sets_comprehensions" />
       </list>
     </recent_temporary>
   </component>
@@ -207,21 +207,21 @@
       <screen x="35" y="27" width="1331" height="741" />
     </state>
     <state x="483" y="154" width="424" height="484" key="FileChooserDialogImpl/35.27.1331.741@35.27.1331.741" timestamp="1652691121953" />
-    <state width="1308" height="186" key="GridCell.Tab.0.bottom" timestamp="1651829930038">
+    <state width="1308" height="186" key="GridCell.Tab.0.bottom" timestamp="1652780090041">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1308" height="186" key="GridCell.Tab.0.bottom/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1651829930038" />
-    <state width="1308" height="186" key="GridCell.Tab.0.center" timestamp="1651829930038">
+    <state width="1308" height="186" key="GridCell.Tab.0.bottom/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1652780090041" />
+    <state width="1308" height="186" key="GridCell.Tab.0.center" timestamp="1652780090041">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1308" height="186" key="GridCell.Tab.0.center/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1651829930038" />
-    <state width="1308" height="186" key="GridCell.Tab.0.left" timestamp="1651829930038">
+    <state width="1308" height="186" key="GridCell.Tab.0.center/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1652780090041" />
+    <state width="1308" height="186" key="GridCell.Tab.0.left" timestamp="1652780090041">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1308" height="186" key="GridCell.Tab.0.left/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1651829930038" />
-    <state width="1308" height="186" key="GridCell.Tab.0.right" timestamp="1651829930038">
+    <state width="1308" height="186" key="GridCell.Tab.0.left/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1652780090041" />
+    <state width="1308" height="186" key="GridCell.Tab.0.right" timestamp="1652780090041">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1308" height="186" key="GridCell.Tab.0.right/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1651829930038" />
+    <state width="1308" height="186" key="GridCell.Tab.0.right/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1652780090041" />
   </component>
 </project>

@@ -1,5 +1,10 @@
 from typing import Optional
 
+#============================================
+# LINK LEETCODE PROBLEM
+# https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+#===========================
+
 
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -40,20 +45,13 @@ class Solution:
             current = head
             next = head.next
             previous = None
-            list = []
             cpt = 0
             while next is not None:
-                # print(current)
-                list.append(current.val)
                 if cpt == index:
-                    #print("stop here")
-                    #print(previous)
                     if current.next is not None:
                         previous.next = current.next
                     else:
                         previous.next = None
-                    #print(current)
-                    #print(previous)
                 previous = current
                 current = next
                 next = next.next
@@ -69,17 +67,16 @@ class Solution:
             if index != indexOfItemToDelete:
                 newList.append(list[index])
 
-        #data = self.formatResultNow(newList, head, indexOfItemToDelete)
-        #print(self.fromListNodeToList(data))
+        data = self.formatResultNow(newList, head, indexOfItemToDelete)
+        print(self.fromListNodeToList(data))
         return self.formatResultNow(newList, head, indexOfItemToDelete)
 
 
-five = ListNode(5)
-four = ListNode(4, five)
-third = ListNode(3, four)
-second = ListNode(2, third)
-first = ListNode(1, second)
-
 if __name__ == "__main__":
+    five = ListNode(5)
+    four = ListNode(4, five)
+    third = ListNode(3, four)
+    second = ListNode(2, third)
+    first = ListNode(1, second)
     response = Solution().removeNthFromEnd(first, 2)
-    # response_two = Solution().removeNthFromEnd(ListNode(1),1)
+    print(response)

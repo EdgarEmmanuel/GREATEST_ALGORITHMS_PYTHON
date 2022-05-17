@@ -55,7 +55,7 @@
       <recent name="$PROJECT_DIR$/generators_expr" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.lists">
+  <component name="RunManager" selected="Python.sets">
     <configuration name="coroutines" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="my_courses" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,27 +98,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="my_courses" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generators" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generators/generator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="lists" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="my_courses" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,6 +111,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_structures/lists.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sets" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="my_courses" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_structures" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_structures/sets.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sets" />
         <item itemvalue="Python.lists" />
         <item itemvalue="Python.tuples_and_named_tuples" />
         <item itemvalue="Python.empty_object" />
         <item itemvalue="Python.coroutines" />
-        <item itemvalue="Python.generator" />
       </list>
     </recent_temporary>
   </component>
@@ -207,21 +207,21 @@
       <screen x="35" y="27" width="1331" height="741" />
     </state>
     <state x="483" y="154" width="424" height="484" key="FileChooserDialogImpl/35.27.1331.741@35.27.1331.741" timestamp="1652691121953" />
-    <state width="1308" height="186" key="GridCell.Tab.0.bottom" timestamp="1652780090041">
+    <state width="1308" height="186" key="GridCell.Tab.0.bottom" timestamp="1652781736453">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1308" height="186" key="GridCell.Tab.0.bottom/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1652780090041" />
-    <state width="1308" height="186" key="GridCell.Tab.0.center" timestamp="1652780090041">
+    <state width="1308" height="186" key="GridCell.Tab.0.bottom/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1652781736453" />
+    <state width="1308" height="186" key="GridCell.Tab.0.center" timestamp="1652781736453">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1308" height="186" key="GridCell.Tab.0.center/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1652780090041" />
-    <state width="1308" height="186" key="GridCell.Tab.0.left" timestamp="1652780090041">
+    <state width="1308" height="186" key="GridCell.Tab.0.center/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1652781736453" />
+    <state width="1308" height="186" key="GridCell.Tab.0.left" timestamp="1652781736453">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1308" height="186" key="GridCell.Tab.0.left/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1652780090041" />
-    <state width="1308" height="186" key="GridCell.Tab.0.right" timestamp="1652780090041">
+    <state width="1308" height="186" key="GridCell.Tab.0.left/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1652781736453" />
+    <state width="1308" height="186" key="GridCell.Tab.0.right" timestamp="1652781736453">
       <screen x="35" y="27" width="1331" height="741" />
     </state>
-    <state width="1308" height="186" key="GridCell.Tab.0.right/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1652780090041" />
+    <state width="1308" height="186" key="GridCell.Tab.0.right/35.27.1331.741/1366.0.1600.900@35.27.1331.741" timestamp="1652781736453" />
   </component>
 </project>

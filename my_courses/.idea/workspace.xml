@@ -55,8 +55,8 @@
       <recent name="$PROJECT_DIR$/generators_expr" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.sets">
-    <configuration name="coroutines" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.dictionnaries">
+    <configuration name="dictionnaries" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="my_courses" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -64,11 +64,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/coroutines" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_structures" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/coroutines/coroutines.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_structures/dictionnaries.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dictionnaries" />
         <item itemvalue="Python.sets" />
         <item itemvalue="Python.lists" />
         <item itemvalue="Python.tuples_and_named_tuples" />
         <item itemvalue="Python.empty_object" />
-        <item itemvalue="Python.coroutines" />
       </list>
     </recent_temporary>
   </component>
